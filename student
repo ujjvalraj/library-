@@ -1,0 +1,31 @@
+#include<iostream.h>
+#include<conio.h>
+class student
+{
+public:
+char name[30];
+int roll_number;
+void get_();
+void put();
+}
+void student :: get_()
+{
+cout<<"enter the name";
+cin>>name;
+cout<<"enter the roll_number";
+cin>>roll_number;
+}
+void student :: put_()
+{
+cout<<"name="<<name;
+cout<<"roll_number"<<roll_number;
+}
+main()
+{
+clrscr();
+student s1,s2;
+s1.get();
+s1.put();
+getch();
+return 0;
+}
